@@ -32,6 +32,9 @@ require("./routes/UserRoutes")(app)
 require("./routes/EmployeeEouyes")(app)
 require("./routes/PersonRoutes")(app)
 
+require("./routes/CustRoutes")(app)
+require("./routes/OrderRoutes")(app)
+
 app.listen(5000, () => {
     console.log("Server Started")
 })
