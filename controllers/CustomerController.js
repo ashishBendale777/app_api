@@ -7,7 +7,6 @@ exports.addCustomer = (req, res) => {
         CustAddress: req.body.caddress,
         CustCity: req.body.ccity,
     })
-
     cust.save()
         .then((insCust) => {
             res.status(200).json(insCust)
